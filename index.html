@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Abu Shakib Sagor | Google Search Ads Expert for Local Businesses</title>
+<meta name="description" content="Google Search Ads specialist helping local service businesses get more phone calls and quality leads with tracked, profitable campaigns.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+  /* ===== BRAND COLORS (Google Ads inspired) — change here to recolor the whole site ===== */
+  :root{
+    --blue:#1a73e8;
+    --red:#d93025;
+    --yellow:#f9ab00;
+    --green:#188038;
+    --ink:#12261f;
+    --muted:#5b6b64;
+    --cream:#efece5;
+    --card:#ffffff;
+    --line:#e3dfd6;
+    --radius:18px;
+    --shadow:0 10px 30px rgba(18,38,31,.08);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth;scroll-padding-top:84px}
+  body{font-family:'Plus Jakarta Sans',system-ui,sans-serif;color:var(--ink);background:#fff;line-height:1.6;-webkit-font-smoothing:antialiased}
+  img{max-width:100%;display:block}
+  a{color:inherit;text-decoration:none}
+  .container{width:min(1160px,100% - 40px);margin-inline:auto}
+  section{padding:88px 0}
+  .ic{width:20px;height:20px;fill:currentColor;flex:none}
+  .ic.stroke{fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+
+  /* ===== Buttons ===== */
+  .btn{display:inline-flex;align-items:center;gap:10px;padding:13px 24px;border-radius:999px;font-weight:700;font-size:15px;border:2px solid transparent;cursor:pointer;transition:.2s;font-family:inherit}
+  .btn-green{background:var(--green);color:#fff}
+  .btn-green:hover{background:#136a2c;transform:translateY(-2px)}
+  .btn-dark{background:var(--ink);color:#fff}
+  .btn-dark:hover{transform:translateY(-2px);background:#000}
+  .btn-outline{border-color:var(--ink);color:var(--ink);background:transparent}
+  .btn-outline:hover{background:var(--ink);color:#fff}
+  .btn-blue{background:var(--blue);color:#fff}
+  .btn-blue:hover{background:#1557b0;transform:translateY(-2px)}
+  .btn-red{background:var(--red);color:#fff}
+  .btn-red:hover{background:#b3261b;transform:translateY(-2px)}
+
+  /* ===== Section headings ===== */
+  .eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:12px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--green);background:#e1efe6;padding:6px 14px;border-radius:999px}
+  .eyebrow::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--yellow)}
+  .section-title{font-size:clamp(30px,4vw,44px);font-weight:800;line-height:1.15;margin:16px 0 12px;letter-spacing:-.02em}
+  .section-sub{color:var(--muted);max-width:640px;font-size:17px}
+
+  /* ===== Navbar ===== */
+  header.nav{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+  .nav-inner{display:flex;align-items:center;justify-content:space-between;height:72px;gap:16px}
+  .logo{display:flex;align-items:center;gap:10px;font-weight:800;font-size:18px;letter-spacing:-.01em}
+  .logo-mark{display:grid;grid-template-columns:1fr 1fr;gap:3px;width:28px;height:28px}
+  .logo-mark i{border-radius:5px}
+  .logo-mark i:nth-child(1){background:var(--blue)}
+  .logo-mark i:nth-child(2){background:var(--red)}
+  .logo-mark i:nth-child(3){background:var(--yellow)}
+  .logo-mark i:nth-child(4){background:var(--green)}
+  nav.menu{display:flex;gap:26px}
+  nav.menu a{font-size:14.5px;font-weight:600;color:#33453e;position:relative;padding:6px 0}
+  nav.menu a::after{content:"";position:absolute;left:0;bottom:0;height:2px;width:0;background:var(--green);transition:.25s}
+  nav.menu a:hover::after,nav.menu a.active::after{width:100%}
+  nav.menu a.active{color:var(--green)}
+  .nav-cta{display:inline-flex}
+  .burger{display:none;background:none;border:0;cursor:pointer;padding:8px}
+  .burger span{display:block;width:24px;height:2.5px;background:var(--ink);margin:5px 0;border-radius:2px;transition:.25s}
+
+  /* ===== Hero ===== */
+  .hero{padding:64px 0 40px;background:
+    radial-gradient(circle at 85% 20%,rgba(26,115,232,.10),transparent 40%),
+    radial-gradient(circle at 10% 90%,rgba(249,171,0,.12),transparent 40%),#fff}
+  .hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center}
+  .hero h1{font-size:clamp(38px,5.4vw,66px);line-height:1.05;font-weight:800;letter-spacing:-.03em;margin-bottom:6px}
+  .hero h1 .g{color:var(--green);display:block}
+  .hero p.lead{font-size:17.5px;color:var(--muted);max-width:540px;margin:20px 0 28px}
+  .hero-actions{display:flex;flex-wrap:wrap;gap:14px;align-items:center}
+  .socials{display:flex;gap:10px}
+  .socials a{width:44px;height:44px;border-radius:50%;border:2px solid var(--ink);display:grid;place-items:center;transition:.2s}
+  .socials a:hover{background:var(--ink);color:#fff;transform:translateY(-2px)}
+  .hero-visual{position:relative;display:grid;place-items:end center;min-height:460px}
+  .hero-visual::before{content:"";position:absolute;bottom:0;left:50%;transform:translateX(-50%);width:min(430px,92%);aspect-ratio:1;border-radius:50%;
+    background:radial-gradient(circle at 30% 25%,#e8f0fe 0%,#fff4d6 55%,#e6f4ea 100%);box-shadow:0 0 0 14px rgba(26,115,232,.07),0 0 0 28px rgba(249,171,0,.07)}
+  .photo{position:relative;width:min(400px,92%);display:grid;place-items:end center}
+  .photo img{position:relative;width:100%;height:auto;filter:drop-shadow(0 18px 24px rgba(18,38,31,.18))}
+  .photo.nophoto{aspect-ratio:4/5;border-radius:28px;background:linear-gradient(135deg,var(--blue),var(--green));place-items:center}
+  .photo .initials{font-size:96px;font-weight:800;color:rgba(255,255,255,.9);display:none}
+  .photo.nophoto .initials{display:block}
+  .float{position:absolute;background:#fff;border-radius:14px;box-shadow:var(--shadow);padding:12px 16px;display:flex;align-items:center;gap:10px;font-size:13px;line-height:1.3;border:1px solid var(--line);animation:bob 5s ease-in-out infinite}
+  .float b{display:block;font-size:17px}
+  .float .dot{width:34px;height:34px;border-radius:10px;display:grid;place-items:center;color:#fff;font-weight:800}
+  .f1{top:6%;left:-2%}.f1 .dot{background:var(--yellow)}
+  .f2{top:40%;right:-3%;animation-delay:1s}.f2 .dot{background:var(--blue)}
+  .f3{bottom:6%;left:2%;animation-delay:2s}.f3 .dot{background:var(--red)}
+  @keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+
+  /* ===== Trust strip ===== */
+  .trust{margin-top:48px;border:1.5px solid var(--line);border-radius:16px;padding:16px 24px;display:flex;flex-wrap:wrap;gap:14px 20px;align-items:center;background:#fff}
+  .trust span.t{font-size:14px;font-weight:600;color:var(--muted)}
+  .avatars{display:flex;align-items:center}
+  .av{width:40px;height:40px;border-radius:50%;border:3px solid #fff;margin-left:-12px;display:grid;place-items:center;color:#fff;font-weight:800;font-size:14px;overflow:hidden;box-shadow:0 2px 6px rgba(0,0,0,.12)}
+  .av:first-child{margin-left:0}
+  .avatar-strip{height:46px;width:auto;display:block}
+  .av img{width:100%;height:100%;object-fit:cover}
+  .chips{display:flex;flex-wrap:wrap;gap:10px}
+  .chip{background:var(--green);color:#fff;font-size:13px;font-weight:700;padding:6px 16px;border-radius:999px}
+  .chip:nth-child(4n+1){background:var(--blue)}
+  .chip:nth-child(4n+2){background:var(--red)}
+  .chip:nth-child(4n+3){background:var(--yellow);color:#222}
+  .chip:nth-child(4n+4){background:var(--green)}
+
+  /* ===== Stats band ===== */
+  .stats{padding:0;margin-top:56px}
+  .stat-row{display:grid;grid-template-columns:repeat(4,1fr);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow)}
+  .stat-row div{padding:26px 24px;color:#fff}
+  .stat-row div:nth-child(1){background:var(--blue)}
+  .stat-row div:nth-child(2){background:var(--red)}
+  .stat-row div:nth-child(3){background:var(--yellow);color:#1d1d1d}
+  .stat-row div:nth-child(4){background:var(--green)}
+  .stat-row small{font-size:13px;font-weight:600;opacity:.9;display:block}
+  .stat-row strong{font-size:34px;font-weight:800;letter-spacing:-.02em}
+
+  /* ===== Services ===== */
+  .services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:44px}
+  .svc{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:28px;transition:.25s}
+  .svc:hover{transform:translateY(-6px);box-shadow:var(--shadow)}
+  .svc .num{width:46px;height:46px;border-radius:13px;display:grid;place-items:center;color:#fff;font-weight:800;margin-bottom:18px}
+  .svc:nth-child(4n+1) .num{background:var(--blue)}
+  .svc:nth-child(4n+2) .num{background:var(--red)}
+  .svc:nth-child(4n+3) .num{background:var(--yellow);color:#1d1d1d}
+  .svc:nth-child(4n+4) .num{background:var(--green)}
+  .svc h3{font-size:19px;margin-bottom:8px}
+  .svc p{color:var(--muted);font-size:15px}
+
+  /* ===== Testimonials ===== */
+  #testimonials{background:var(--cream)}
+  .marquee{margin-top:44px;overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent);mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent)}
+  .track{display:flex;gap:22px;width:max-content;padding:6px 0;animation:slideLeft 60s linear infinite}
+  .marquee:hover .track{animation-play-state:paused}
+  @keyframes slideLeft{from{transform:translateX(0)}to{transform:translateX(calc(-50% - 11px))}}
+  @media(prefers-reduced-motion:reduce){.track{animation:none}.marquee{overflow-x:auto}}
+  .testi{width:340px;flex:none;background:#fff;border-radius:var(--radius);padding:28px;border:1px solid var(--line);position:relative;display:flex;flex-direction:column;gap:16px}
+  .stars{color:var(--yellow);letter-spacing:3px;font-size:18px}
+  .testi p{font-size:15.5px;color:#33453e;flex:1}
+  .who{display:flex;align-items:center;gap:12px}
+  .avatar{width:44px;height:44px;border-radius:50%;display:grid;place-items:center;color:#fff;font-weight:800}
+  .who b{display:block;font-size:15px}
+  .who small{color:var(--muted)}
+  .sample-tag{position:absolute;top:16px;right:16px;font-size:10.5px;font-weight:800;text-transform:uppercase;letter-spacing:.08em;background:#fff4d6;color:#8a5a00;padding:3px 9px;border-radius:999px}
+
+  /* ===== About ===== */
+  .about-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:56px;align-items:center}
+  .about-photo{aspect-ratio:1/1.05;border-radius:28px;background:linear-gradient(160deg,#e8f0fe 0%,#fff4d6 60%,#fde7e4 100%);position:relative;overflow:hidden;display:grid;place-items:end center;box-shadow:var(--shadow)}
+  .about-photo::before{content:"";position:absolute;width:70%;aspect-ratio:1;border-radius:50%;background:rgba(249,171,0,.22);bottom:-12%;left:50%;transform:translateX(-50%)}
+  .about-photo img{position:relative;width:100%;height:100%;object-fit:contain;object-position:bottom center}
+  .about-photo .initials{font-size:90px;font-weight:800;color:rgba(255,255,255,.92);display:none}
+  .about-photo.nophoto{place-items:center;background:linear-gradient(135deg,var(--yellow),var(--red))}
+  .about-photo.nophoto .initials{display:block}
+  .about p{color:var(--muted);margin-bottom:14px;font-size:16.5px}
+  .skills{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}
+  .skills span{border:1.5px solid var(--line);padding:7px 16px;border-radius:999px;font-size:14px;font-weight:600;background:#fff}
+  .skills span::before{content:"✓ ";color:var(--green);font-weight:800}
+
+  /* ===== Case studies ===== */
+  .cs-head{display:flex;justify-content:space-between;align-items:end;flex-wrap:wrap;gap:16px}
+  .cs-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:40px}
+  .cs{background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;display:flex;flex-direction:column;transition:.25s}
+  .cs:hover{transform:translateY(-6px);box-shadow:var(--shadow)}
+  .cover{height:190px;position:relative;background:linear-gradient(135deg,var(--blue),var(--green));overflow:hidden}
+  .cover:nth-child(1){}
+  .cs:nth-child(2) .cover{background:linear-gradient(135deg,var(--red),var(--yellow))}
+  .cs:nth-child(3) .cover{background:linear-gradient(135deg,var(--green),var(--blue))}
+  .cover .ph{position:absolute;inset:0;display:grid;place-items:center;color:rgba(255,255,255,.85);font-weight:800;font-size:15px;letter-spacing:.08em;text-transform:uppercase}
+  .cover img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+  .cs-body{padding:20px 22px 22px;display:flex;flex-direction:column;gap:10px;flex:1}
+  .tag{align-self:flex-start;background:#e1efe6;color:var(--green);font-size:12px;font-weight:800;padding:3px 12px;border-radius:999px}
+  .cs h3{font-size:18.5px;line-height:1.3}
+  .cs p{font-size:14.5px;color:var(--muted);flex:1}
+  .cs-links{display:flex;gap:18px;font-size:14px;font-weight:700;margin-top:6px}
+  .cs-links button,.cs-links a{background:none;border:0;font:inherit;cursor:pointer;color:var(--ink)}
+  .cs-links .view{color:var(--green)}
+  .cs-links .view:hover,.cs-links a:hover{text-decoration:underline}
+  .cs-more{margin-top:34px}
+  .cs.hidden{display:none}
+
+  /* ===== Projects ===== */
+  #projects{background:var(--cream)}
+  .proj-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:28px;margin-top:44px}
+  .proj{background:#fff;border:1px solid var(--line);border-radius:22px;overflow:hidden;transition:.25s}
+  .proj:hover{transform:translateY(-5px);box-shadow:var(--shadow)}
+  .shot{position:relative;border-bottom:1px solid var(--line);background:#fff;min-height:230px;display:flex;flex-direction:column;justify-content:center}
+  .shot img{width:100%;height:auto}
+  .tiles{display:grid;grid-template-columns:repeat(4,1fr)}
+  .tiles div{padding:14px 12px;color:#fff;font-size:12px;font-weight:600;min-height:78px}
+  .tiles div b{display:block;font-size:20px;font-weight:700;margin-top:2px}
+  .tiles div:nth-child(1){background:#1a73e8}
+  .tiles div:nth-child(2){background:#d93025}
+  .tiles div:nth-child(3){background:#f9ab00}
+  .tiles div:nth-child(4){background:#188038}
+  .spark{width:100%;height:120px;display:block;padding:10px 12px 14px}
+  .proj-body{padding:22px 24px 26px}
+  .proj-body h3{font-size:19px;margin-bottom:6px}
+  .proj-body p{color:var(--muted);font-size:14.5px;margin-bottom:18px}
+  .pstats{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+  .pstat{background:var(--cream);border-radius:12px;padding:12px 6px;text-align:center}
+  .pstat b{display:block;font-size:17px;font-weight:800}
+  .pstat small{font-size:10.5px;font-weight:600;text-transform:uppercase;letter-spacing:.04em;color:var(--muted)}
+
+  /* ===== Contact ===== */
+  .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;margin-top:44px;align-items:start}
+  .c-card{background:var(--ink);color:#fff;border-radius:24px;padding:36px}
+  .c-card h3{font-size:24px;margin-bottom:10px}
+  .c-card p{color:#c7d4ce;margin-bottom:24px}
+  .c-list{display:grid;gap:14px}
+  .c-list a{display:flex;align-items:center;gap:14px;padding:14px 16px;border-radius:14px;background:rgba(255,255,255,.07);transition:.2s;font-weight:600;font-size:15px}
+  .c-list a:hover{background:rgba(255,255,255,.15);transform:translateX(4px)}
+  .c-list .ib{width:38px;height:38px;border-radius:10px;display:grid;place-items:center;flex:none}
+  .c-list a:nth-child(1) .ib{background:var(--green)}
+  .c-list a:nth-child(2) .ib{background:var(--blue)}
+  .c-list a:nth-child(3) .ib{background:var(--red)}
+  .c-list a:nth-child(4) .ib{background:var(--yellow);color:#222}
+  form.cform{background:#fff;border:1px solid var(--line);border-radius:24px;padding:32px;display:grid;gap:16px}
+  form label{font-size:13px;font-weight:700;display:block;margin-bottom:6px}
+  form input,form textarea,form select{width:100%;padding:13px 15px;border:1.5px solid var(--line);border-radius:12px;font:inherit;font-size:15px;background:#fff;color:var(--ink)}
+  form input:focus,form textarea:focus,form select:focus{outline:none;border-color:var(--blue);box-shadow:0 0 0 3px rgba(26,115,232,.15)}
+  form textarea{min-height:110px;resize:vertical}
+  .note{font-size:12.5px;color:var(--muted)}
+
+  /* ===== Footer ===== */
+  footer{background:var(--ink);color:#c7d4ce;padding:56px 0 28px}
+  .f-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:40px}
+  footer h4{color:#fff;margin-bottom:14px;font-size:15px}
+  footer .logo{color:#fff;margin-bottom:12px}
+  footer ul{list-style:none;display:grid;gap:8px;font-size:14.5px}
+  footer ul a:hover{color:#fff}
+  .f-social{display:flex;gap:10px;margin-top:16px}
+  .f-social a{width:42px;height:42px;border-radius:50%;background:rgba(255,255,255,.1);display:grid;place-items:center;color:#fff;transition:.2s}
+  .f-social a:hover{background:var(--green);transform:translateY(-3px)}
+  .copy{border-top:1px solid rgba(255,255,255,.12);margin-top:36px;padding-top:20px;font-size:13.5px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+
+  /* ===== Floating WhatsApp ===== */
+  .wa-float{position:fixed;right:20px;bottom:20px;width:56px;height:56px;border-radius:50%;background:#25d366;color:#fff;display:grid;place-items:center;box-shadow:0 8px 24px rgba(0,0,0,.25);z-index:40;transition:.2s}
+  .wa-float:hover{transform:scale(1.08)}
+  .wa-float .ic{width:28px;height:28px}
+
+  /* ===== Modal ===== */
+  dialog{border:0;border-radius:22px;max-width:640px;width:calc(100% - 32px);padding:0;box-shadow:0 30px 80px rgba(0,0,0,.3)}
+  dialog::backdrop{background:rgba(10,20,16,.6);backdrop-filter:blur(3px)}
+  .m-top{height:150px;position:relative;background:linear-gradient(135deg,var(--blue),var(--green));overflow:hidden}
+  .m-top img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+  .m-close{position:absolute;top:12px;right:12px;width:36px;height:36px;border-radius:50%;border:0;background:#fff;font-size:20px;cursor:pointer;z-index:2}
+  .m-body{padding:26px 30px 30px}
+  .m-body h3{font-size:24px;line-height:1.25;margin:10px 0 14px}
+  .m-body h4{font-size:13px;text-transform:uppercase;letter-spacing:.08em;color:var(--green);margin:18px 0 6px}
+  .m-body p{color:var(--muted);font-size:15.5px}
+  .m-res{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:8px}
+  .m-res div{background:var(--cream);border-radius:12px;padding:14px 8px;text-align:center}
+  .m-res b{display:block;font-size:20px}
+  .m-res small{font-size:11px;font-weight:600;color:var(--muted);text-transform:uppercase}
+  .m-actions{margin-top:24px;display:flex;gap:12px;flex-wrap:wrap}
+
+  /* ===== Reveal ===== */
+  .reveal{opacity:0;transform:translateY(24px);transition:.7s ease}
+  .reveal.in{opacity:1;transform:none}
+
+  /* ===== Responsive ===== */
+  @media(max-width:980px){
+    nav.menu{position:fixed;top:72px;left:0;right:0;background:#fff;flex-direction:column;gap:0;padding:8px 20px 20px;border-bottom:1px solid var(--line);transform:translateY(-130%);transition:.3s;z-index:-1}
+    nav.menu.open{transform:none}
+    nav.menu a{padding:14px 0;border-bottom:1px solid var(--line)}
+    .burger{display:block}
+    .nav-cta{display:none}
+    .hero-grid,.about-grid,.contact-grid{grid-template-columns:1fr}
+    .hero-visual{min-height:380px}
+    .services-grid,.testi-grid,.cs-grid{grid-template-columns:1fr 1fr}
+    .proj-grid{grid-template-columns:1fr}
+    .stat-row{grid-template-columns:1fr 1fr}
+    .f-grid{grid-template-columns:1fr 1fr}
+  }
+  @media(max-width:640px){
+    section{padding:64px 0}
+    .services-grid,.testi-grid,.cs-grid{grid-template-columns:1fr}
+    .pstats{grid-template-columns:repeat(2,1fr)}
+    .tiles div{padding:10px 8px;font-size:10.5px}
+    .tiles div b{font-size:15px}
+    .f-grid{grid-template-columns:1fr}
+    .f1{left:0}.f2{right:0}
+    .m-res{grid-template-columns:1fr}
+  }
+</style>
+</head>
+
+<body>
+
+<!-- SVG icon sprite -->
+<svg style="display:none" xmlns="http://www.w3.org/2000/svg">
+  <symbol id="i-wa" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></symbol>
+  <symbol id="i-in" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></symbol>
+  <symbol id="i-fb" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="m3 7 9 6 9-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+</svg>
+
+<!-- ================= NAVBAR ================= -->
+<header class="nav">
+  <div class="container nav-inner">
+    <a href="#home" class="logo"><span class="logo-mark"><i></i><i></i><i></i><i></i></span> Abu Shakib Sagor</a>
+    <nav class="menu" id="menu">
+      <a href="#home">Home</a>
+      <a href="#services">Services</a>
+      <a href="#testimonials">Testimonials</a>
+      <a href="#about">About Me</a>
+      <a href="#case-studies">Case Studies</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="btn btn-blue nav-cta" data-wa href="#" target="_blank" rel="noopener">Request Free Audit</a>
+    <button class="burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<main>
+<!-- ================= HOME ================= -->
+<section class="hero" id="home">
+  <div class="container">
+    <div class="hero-grid">
+      <div>
+        <span class="eyebrow">Google Search Ads Specialist</span>
+        <h1 style="margin-top:18px">Hello, I'm Abu Shakib Sagor <span class="g">Google Ads Expert</span></h1>
+        <p class="lead">I help local service businesses get more phone calls and quality leads with Google Search Ads — from keyword research and campaign setup to conversion tracking and ongoing optimization.</p>
+        <div class="hero-actions">
+          <a class="btn btn-green" href="#contact">Contact Me</a>
+          <a class="btn btn-outline" href="#case-studies">View Case Studies</a>
+          <div class="socials">
+            <a data-li href="#" target="_blank" rel="noopener" aria-label="LinkedIn"><svg class="ic"><use href="#i-in"/></svg></a>
+            <a data-fb href="#" target="_blank" rel="noopener" aria-label="Facebook"><svg class="ic"><use href="#i-fb"/></svg></a>
+            <a data-wa href="#" target="_blank" rel="noopener" aria-label="WhatsApp"><svg class="ic"><use href="#i-wa"/></svg></a>
+          </div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="photo">
+          <span class="initials">AS</span>
+          <!-- Hero photo: images/profile.png (transparent PNG) -->
+          <img src="images/profile.png" alt="Abu Shakib Sagor" onerror="this.parentElement.classList.add('nophoto');this.remove()">
+        </div>
+        <div class="float f1"><span class="dot">★</span><span>Client Feedback<b>Results-first</b></span></div>
+        <div class="float f2"><span class="dot">8+</span><span>Campaigns<b>Showcased</b></span></div>
+        <div class="float f3"><span class="dot">$</span><span>Ad Spend Managed<b>$325K+</b></span></div>
+      </div>
+    </div>
+
+    <div class="trust">
+      <div class="avatars" id="trustAvatars"></div>
+      <span class="t" id="trustText"></span>
+      <div class="chips" id="trustChips"></div>
+    </div>
+  </div>
+</section>
+
+<section class="stats">
+  <div class="container">
+    <div class="stat-row reveal">
+      <div><small>Campaigns Showcased</small><strong>8+</strong></div>
+      <div><small>Ad Spend Managed</small><strong>$325K+</strong></div>
+      <div><small>Focus</small><strong>Local Leads</strong></div>
+      <div><small>Tracking</small><strong>100% Setup</strong></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SERVICES ================= -->
+<section id="services">
+  <div class="container">
+    <span class="eyebrow">Services</span>
+    <h2 class="section-title">Everything you need to win with Google Search Ads</h2>
+    <p class="section-sub">A complete, hands-on service built around one goal: more booked jobs from the money you spend on ads.</p>
+    <div class="services-grid">
+      <div class="svc reveal"><div class="num">01</div><h3>Search Campaign Setup</h3><p>Keyword research, tightly themed ad groups, high-intent match types and ad copy built to get qualified clicks.</p></div>
+      <div class="svc reveal"><div class="num">02</div><h3>Call &amp; Lead Form Campaigns</h3><p>Campaigns designed to bring in phone calls and form submissions from people ready to hire right now.</p></div>
+      <div class="svc reveal"><div class="num">03</div><h3>Conversion Tracking</h3><p>Proper tracking for calls, forms and key actions so every dollar of ad spend can be measured.</p></div>
+      <div class="svc reveal"><div class="num">04</div><h3>Negative Keywords &amp; Waste Control</h3><p>Weekly search-term reviews to block irrelevant clicks and lower your cost per lead.</p></div>
+      <div class="svc reveal"><div class="num">05</div><h3>Geo-Targeting &amp; Budget Pacing</h3><p>Reach the right service areas, schedule ads for peak hours and spread budget where it performs best.</p></div>
+      <div class="svc reveal"><div class="num">06</div><h3>Reporting &amp; Optimization</h3><p>Clear, simple reports and continuous testing of bids, ads and landing pages to improve results every month.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= TESTIMONIALS ================= -->
+<section id="testimonials">
+  <div class="container">
+    <span class="eyebrow">Testimonials</span>
+    <h2 class="section-title">What clients say</h2>
+    <p class="section-sub">Feedback from business owners I've worked with.</p>
+    <div class="marquee"><div class="track" id="testiTrack"></div></div>
+  </div>
+</section>
+
+<!-- ================= ABOUT ================= -->
+<section id="about" class="about">
+  <div class="container about-grid">
+    <div class="about-photo reveal">
+      <span class="initials">AS</span>
+      <!-- About photo: images/about.png (transparent PNG) -->
+      <img src="images/about.png" alt="About Abu Shakib Sagor" onerror="this.parentElement.classList.add('nophoto');this.remove()">
+    </div>
+    <div class="reveal">
+      <span class="eyebrow">About Me</span>
+      <h2 class="section-title">I turn ad budgets into booked jobs</h2>
+      <p>I'm Abu Shakib Sagor, a Google Ads specialist focused on Search campaigns for local service businesses. My approach is simple: target buyers with real intent, track every call and lead, and keep cutting wasted spend.</p>
+      <p>I work closely with business owners, explain things in plain language, and share transparent performance reports — so you always know what your ad money is doing.</p>
+      <div class="skills">
+        <span>Google Search Ads</span><span>Keyword Research</span><span>Call Campaigns</span>
+        <span>Conversion Tracking</span><span>Landing Page Advice</span><span>Cost-per-Lead Optimization</span>
+      </div>
+      <div style="margin-top:28px"><a class="btn btn-green" data-wa href="#" target="_blank" rel="noopener">Request Free Audit</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CASE STUDIES ================= -->
+<section id="case-studies">
+  <div class="container">
+    <div class="cs-head">
+      <div>
+        <span class="eyebrow">Proof, not promises</span>
+        <h2 class="section-title">Case Studies</h2>
+        <p class="section-sub">Full breakdowns of the strategy, numbers and results behind a few recent accounts.</p>
+      </div>
+    </div>
+    <div class="cs-grid" id="csGrid"></div>
+    <div class="cs-more" id="csMore" style="display:none"><button class="btn btn-dark" id="csMoreBtn">View More Case Studies</button></div>
+  </div>
+</section>
+
+<!-- ================= PROJECTS ================= -->
+<section id="projects">
+  <div class="container">
+    <span class="eyebrow">My Results</span>
+    <h2 class="section-title">Previous Projects</h2>
+    <p class="section-sub">Real performance snapshots pulled straight from Google Ads accounts I manage.</p>
+    <div class="proj-grid" id="projGrid"></div>
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section id="contact">
+  <div class="container">
+    <span class="eyebrow">Contact</span>
+    <h2 class="section-title">Let's get you more leads</h2>
+    <p class="section-sub">Send a message and I'll reply with a free audit of your current Google Ads setup.</p>
+    <div class="contact-grid">
+      <div class="c-card reveal">
+        <h3>Request a Free Audit</h3>
+        <p>Fastest way to reach me is WhatsApp. You can also use LinkedIn, Facebook or email.</p>
+        <div class="c-list">
+          <a data-wa href="#" target="_blank" rel="noopener"><span class="ib"><svg class="ic"><use href="#i-wa"/></svg></span> WhatsApp: +880 1602-120910</a>
+          <a data-li href="#" target="_blank" rel="noopener"><span class="ib"><svg class="ic"><use href="#i-in"/></svg></span> LinkedIn: abushakibsagor</a>
+          <a data-fb href="#" target="_blank" rel="noopener"><span class="ib"><svg class="ic"><use href="#i-fb"/></svg></span> Facebook: abushakibsagor</a>
+          <a data-mail href="#"><span class="ib"><svg class="ic"><use href="#i-mail"/></svg></span> ppcshakib@gmail.com</a>
+        </div>
+      </div>
+
+      <form class="cform reveal" id="cform">
+        <div><label for="fn">Your name</label><input id="fn" required placeholder="John Smith"></div>
+        <div><label for="fb">Business type</label>
+          <select id="fb"><option>Roofing</option><option>Cleaning</option><option>Plumbing</option><option>HVAC</option><option>Dental</option><option>Home Improvement</option><option>Other</option></select></div>
+        <div><label for="fw">Website (optional)</label><input id="fw" placeholder="https://yourbusiness.com"></div>
+        <div><label for="fm">Message</label><textarea id="fm" placeholder="Tell me about your business and goals..."></textarea></div>
+        <button class="btn btn-green" type="submit" style="justify-content:center"><svg class="ic"><use href="#i-wa"/></svg> Send via WhatsApp</button>
+        <p class="note">This opens WhatsApp with your message ready to send.</p>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+  <div class="container">
+    <div class="f-grid">
+      <div>
+        <a href="#home" class="logo"><span class="logo-mark"><i></i><i></i><i></i><i></i></span> Abu Shakib Sagor</a>
+        <p style="max-width:340px;font-size:14.5px">Google Search Ads for local businesses. More calls, more quality leads, less wasted spend.</p>
+        <div class="f-social">
+          <a data-wa href="#" target="_blank" rel="noopener" aria-label="WhatsApp"><svg class="ic"><use href="#i-wa"/></svg></a>
+          <a data-li href="#" target="_blank" rel="noopener" aria-label="LinkedIn"><svg class="ic"><use href="#i-in"/></svg></a>
+          <a data-fb href="#" target="_blank" rel="noopener" aria-label="Facebook"><svg class="ic"><use href="#i-fb"/></svg></a>
+          <a data-mail href="#" aria-label="Email"><svg class="ic"><use href="#i-mail"/></svg></a>
+        </div>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#home">Home</a></li><li><a href="#services">Services</a></li><li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#about">About Me</a></li><li><a href="#case-studies">Case Studies</a></li><li><a href="#projects">Projects</a></li><li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Get in touch</h4>
+        <ul>
+          <li><a data-wa href="#" target="_blank" rel="noopener">WhatsApp: +880 1602-120910</a></li>
+          <li><a data-mail href="#">ppcshakib@gmail.com</a></li>
+          <li><a data-li href="#" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a data-fb href="#" target="_blank" rel="noopener">Facebook</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="copy"><span>© <span id="yr"></span> Abu Shakib Sagor. All rights reserved.</span><span>Google Ads is a trademark of Google LLC. This site is not affiliated with Google.</span></div>
+  </div>
+</footer>
+
+<a class="wa-float" data-wa href="#" target="_blank" rel="noopener" aria-label="Chat on WhatsApp"><svg class="ic"><use href="#i-wa"/></svg></a>
+
+<!-- Case study popup -->
+<dialog id="csModal">
+  <div class="m-top" id="mTop"><button class="m-close" id="mClose" aria-label="Close">×</button></div>
+  <div class="m-body" id="mBody"></div>
+</dialog>
+
+<script>
+/* =====================================================================
+   EDIT HERE — everything you will normally change is in this CONFIG block
+   ===================================================================== */
+
+/* ---- 1) Your contact links ---- */
+const SITE = {
+  whatsapp: "https://wa.me/8801602120910",   // wa.me links need the number WITHOUT the + sign
+  waMessage: "Hi Shakib, I'd like a free Google Ads audit for my business.",
+  linkedin: "https://www.linkedin.com/in/abushakibsagor/",
+  facebook: "https://www.facebook.com/abushakibsagor",
+  email:    "ppcshakib@gmail.com"
+};
+
+/* ---- 2) CASE STUDIES ----
+   cover : your custom cover image (put the file in the images/ folder). If missing, a colored placeholder shows.
+   pdf   : your PDF file (put it in the pdfs/ folder). Leave "" to hide the "Open PDF" link.
+   NOTE: these are SAMPLE write-ups based on your result numbers. Replace the text with your real stories. */
+const CASE_STUDIES = [
+  {
+    tag: "Local Service",
+    title: "Scaling to 1.18K Conversions in One Quarter",
+    short: "How a high-volume Search campaign generated 1.18K conversions from 34.4K clicks over three months.",
+    cover: "images/case-1.jpg",
+    pdf: "pdfs/case-study-1.pdf",
+    challenge: "The business needed a steady flow of leads but was not getting enough volume from its existing ads.",
+    strategy: "Rebuilt the account around high-intent keywords, tightened match types, added negative keywords and set up proper conversion tracking.",
+    results: [["34.4K","Clicks"],["1.18K","Conversions"],["$106K","Ad Spend"]]
+  },
+  {
+    tag: "Local Service",
+    title: "Driving 202 Phone Calls from Search Ads",
+    short: "A call-focused Search campaign built to turn high-intent searches into direct phone inquiries.",
+    cover: "images/case-2.jpg",
+    pdf: "pdfs/case-study-2.pdf",
+    challenge: "The client wanted more direct phone calls instead of low-quality form fills.",
+    strategy: "Used call-focused ads, tightened geo-targeting, scheduled ads for business hours and tracked every call as a conversion.",
+    results: [["767K","Impressions"],["202","Phone Calls"],["$77.42","Cost / Call"]]
+  },
+  {
+    tag: "Local Service",
+    title: "Bringing Cost per Conversion Down to $30",
+    short: "Optimizing keywords and bids to deliver 1.7K conversions at roughly $30 each.",
+    cover: "images/case-3.jpg",
+    pdf: "pdfs/case-study-3.pdf",
+    challenge: "Cost per lead was too high for the business to scale profitably.",
+    strategy: "Cleaned up wasted search terms, shifted budget to best performers and tested new ad copy every few weeks.",
+    results: [["17.2K","Clicks"],["1.7K","Conversions"],["$30.21","Cost / Conv."]]
+  }
+  /* To add more: copy one block above, paste after it with a comma, and edit. The "View More" button appears after 3. */
+];
+
+/* ---- 3) PROJECTS (Google Ads screenshots) ----
+   img   : screenshot file inside images/ folder (project-1.png ... project-8.png). If missing, colored tiles show instead.
+   stats : up to 4 [label, value] pairs shown under the card. */
+const PROJECTS = [
+  { title:"Lead Form Campaign", desc:"Search campaign built to drive lead form submissions.", img:"images/project-1.png",
+    tiles:[["Clicks","10K"],["Cost / conv.","$50.64"],["Conversions","449"],["Cost","$30.1K"]],
+    stats:[["10K","Clicks"],["449","Conversions"],["$50.64","Cost / Conv."],["$30.1K","Ad Spend"]] },
+
+  { title:"Lead Generation Campaign", desc:"Always-on Search campaign focused on steady lead flow at a controlled cost.", img:"images/project-2.png",
+    tiles:[["Impressions","830K"],["Cost / conv.","$74.39"],["Conversions","453"],["Cost","$33.7K"]],
+    stats:[["830K","Impressions"],["453","Conversions"],["$74.39","Cost / Conv."],["$33.7K","Ad Spend"]] },
+
+  { title:"Lead Forms + Phone Calls", desc:"Campaign tracking both form submissions and phone call leads.", img:"images/project-3.png",
+    tiles:[["Cost / conv.","$96.80"],["Lead forms","142"],["Phone call leads","98"],["Cost","$23.2K"]],
+    stats:[["142","Lead Forms"],["98","Phone Leads"],["$96.80","Cost / Conv."],["$23.2K","Ad Spend"]] },
+
+  { title:"Conversion Growth Campaign", desc:"May 30 – Aug 8, 2025. Search campaign optimized for conversions over raw clicks.", img:"images/project-4.png",
+    tiles:[["Impressions","859K"],["Cost / conv.","$65.74"],["Conversions","535"],["Cost","$35.2K"]],
+    stats:[["859K","Impressions"],["535","Conversions"],["$65.74","Cost / Conv."],["$35.2K","Ad Spend"]] },
+
+  { title:"High-Volume Scale Campaign", desc:"Oct 1 – Dec 26, 2025. Scaled spend while keeping conversion volume strong.", img:"images/project-5.png",
+    tiles:[["Clicks","34.4K"],["Impressions","1.29M"],["Conversions","1.18K"],["Cost","$106K"]],
+    stats:[["34.4K","Clicks"],["1.29M","Impressions"],["1.18K","Conversions"],["$106K","Ad Spend"]] },
+
+  { title:"Phone Call Leads Campaign", desc:"Jun 1 – Jul 31, 2025. Search campaign built to drive direct phone calls.", img:"images/project-6.png",
+    tiles:[["Impressions","767K"],["Cost / conv.","$77.42"],["Phone calls","202"],["Cost","$31.4K"]],
+    stats:[["767K","Impressions"],["202","Phone Calls"],["$77.42","Cost / Call"],["$31.4K","Ad Spend"]] },
+
+  { title:"Cost-Efficient Lead Campaign", desc:"Jul 21 – Sep 17, 2025. High conversion volume at a low cost per conversion.", img:"images/project-7.png",
+    tiles:[["Clicks","17.2K"],["Cost / conv.","$30.21"],["Conversions","1.7K"],["Cost","$51.3K"]],
+    stats:[["17.2K","Clicks"],["1.7K","Conversions"],["$30.21","Cost / Conv."],["$51.3K","Ad Spend"]] },
+
+  { title:"Short-Burst Lead Campaign", desc:"Jul 17 – Aug 15, 2025. One-month sprint with strong conversion efficiency.", img:"images/project-8.png",
+    tiles:[["Impressions","264K"],["Cost / conv.","$30.58"],["Conversions","488.5"],["Cost","$14.9K"]],
+    stats:[["264K","Impressions"],["488.5","Conversions"],["$30.58","Cost / Conv."],["$14.9K","Ad Spend"]] }
+];
+
+/* ---- 4) TESTIMONIALS (auto-scrolls to the left) ----
+   These are SAMPLE placeholders. Replace name / role / text with real client feedback,
+   then set sample:false (this removes the yellow "Sample" tag).
+   Add as many as you like — copy a line and paste it below with a comma at the end. */
+const TESTIMONIALS = [
+  { name:"Client Name", role:"Owner, Roofing Company", text:"Replace this with a real review. Mention the result, like more calls or a lower cost per lead.", sample:true },
+  { name:"Client Name", role:"Owner, Cleaning Service", text:"Replace this with a real review. Describe what it was like to work with you.", sample:true },
+  { name:"Client Name", role:"Manager, Plumbing Business", text:"Replace this with a real review. Real names and real results build the most trust.", sample:true },
+  { name:"Client Name", role:"Practice Owner, Dental", text:"Replace this with a real review. Talk about phone calls, bookings or new patients.", sample:true },
+  { name:"Client Name", role:"Founder, Home Improvement", text:"Replace this with a real review. Say how reporting and communication felt.", sample:true },
+  { name:"Client Name", role:"Owner, HVAC Company", text:"Replace this with a real review. Mention how fast leads started coming in.", sample:true },
+  { name:"Client Name", role:"Director, Real Estate Team", text:"Replace this with a real review. Talk about lead quality and cost per lead.", sample:true },
+  { name:"Client Name", role:"Owner, Local Service Business", text:"Replace this with a real review. A short, specific quote works best.", sample:true }
+];
+
+/* ---- 5) TRUST STRIP (under the hero) ----
+   avatarsImage : ONE picture of your real client photos in a row (images/clients.png).
+                  To replace it, upload a new picture with the same name. Use "" to show the avatars list below instead.
+   avatars      : (only used when avatarsImage is "") letters like "J", or photo paths like "images/client-1.jpg".
+   services     : the colored tags. Add, remove or rename freely. */
+const TRUST = {
+  text: "Trusted by local service businesses",
+  avatarsImage: "images/clients.png",
+  avatars: ["J","M","S","R","A","K","D","L"],
+  services: ["Roofing","Cleaning","Plumbing","Dental","Home Improvement","More"]
+};
+
+/* =====================================================================
+   Code below renders the page from the data above — usually no need to edit
+   ===================================================================== */
+const waLink = SITE.whatsapp + "?text=" + encodeURIComponent(SITE.waMessage);
+document.querySelectorAll("[data-wa]").forEach(a=>a.href=waLink);
+document.querySelectorAll("[data-li]").forEach(a=>a.href=SITE.linkedin);
+document.querySelectorAll("[data-fb]").forEach(a=>a.href=SITE.facebook);
+document.querySelectorAll("[data-mail]").forEach(a=>a.href="mailto:"+SITE.email);
+document.getElementById("yr").textContent = new Date().getFullYear();
+
+/* Trust strip */
+const acol=["var(--blue)","var(--red)","var(--yellow)","var(--green)"];
+document.getElementById("trustAvatars").innerHTML = TRUST.avatarsImage ? `<img class="avatar-strip" src="${TRUST.avatarsImage}" alt="Happy clients">` : TRUST.avatars.map((v,i)=>
+  /[\/.]/.test(v) ? `<span class="av"><img src="${v}" alt=""></span>`
+                  : `<span class="av" style="background:${acol[i%4]};${i%4===2?'color:#222':''}">${v}</span>`).join("");
+document.getElementById("trustText").textContent = TRUST.text;
+document.getElementById("trustChips").innerHTML = TRUST.services.map(x=>`<span class="chip">${x}</span>`).join("");
+
+/* Testimonials (rendered twice so the scroll loops seamlessly) */
+const tcolors=["var(--blue)","var(--red)","var(--green)","var(--yellow)"];
+const testiCard=(t,i)=>`
+  <div class="testi">
+    ${t.sample?'<span class="sample-tag">Sample</span>':''}
+    <div class="stars">★★★★★</div>
+    <p>“${t.text}”</p>
+    <div class="who"><div class="avatar" style="background:${tcolors[i%4]};${i%4===3?'color:#222':''}">${t.name.charAt(0)}</div>
+    <div><b>${t.name}</b><small>${t.role}</small></div></div>
+  </div>`;
+const testiHTML = TESTIMONIALS.map(testiCard).join("");
+document.getElementById("testiTrack").innerHTML = testiHTML + `<div style="display:contents" aria-hidden="true">${testiHTML}</div>`;
+
+/* Case studies */
+const csGrid=document.getElementById("csGrid");
+CASE_STUDIES.forEach((c,i)=>{
+  const el=document.createElement("article");
+  el.className="cs reveal"+(i>=3?" hidden":"");
+  el.innerHTML=`
+    <div class="cover"><span class="ph">Case Study ${i+1}</span>${c.cover?`<img src="${c.cover}" alt="${c.title}" onerror="this.remove()">`:''}</div>
+    <div class="cs-body">
+      <span class="tag">${c.tag}</span>
+      <h3>${c.title}</h3>
+      <p>${c.short}</p>
+      <div class="cs-links">
+        <button class="view" data-i="${i}">View Case Study →</button>
+        ${c.pdf?`<a href="${c.pdf}" target="_blank" rel="noopener">Open PDF</a>`:''}
+      </div>
+    </div>`;
+  csGrid.appendChild(el);
+});
+if(CASE_STUDIES.length>3){
+  document.getElementById("csMore").style.display="block";
+  document.getElementById("csMoreBtn").onclick=e=>{
+    csGrid.querySelectorAll(".cs.hidden").forEach(x=>x.classList.remove("hidden"));
+    e.target.parentElement.style.display="none";
+  };
+}
+const modal=document.getElementById("csModal"),mBody=document.getElementById("mBody"),mTop=document.getElementById("mTop");
+csGrid.addEventListener("click",e=>{
+  const b=e.target.closest(".view"); if(!b) return;
+  const c=CASE_STUDIES[b.dataset.i];
+  mTop.querySelectorAll("img").forEach(x=>x.remove());
+  if(c.cover){const im=new Image();im.src=c.cover;im.alt="";im.onload=()=>mTop.prepend(im);}
+  mBody.innerHTML=`
+    <span class="tag">${c.tag}</span>
+    <h3>${c.title}</h3>
+    <h4>Challenge</h4><p>${c.challenge}</p>
+    <h4>Strategy</h4><p>${c.strategy}</p>
+    <h4>Results</h4>
+    <div class="m-res">${c.results.map(r=>`<div><b>${r[0]}</b><small>${r[1]}</small></div>`).join("")}</div>
+    <div class="m-actions">
+      ${c.pdf?`<a class="btn btn-dark" href="${c.pdf}" target="_blank" rel="noopener">Open PDF</a>`:''}
+      <a class="btn btn-green" href="${waLink}" target="_blank" rel="noopener">Get similar results</a>
+    </div>`;
+  modal.showModal();
+});
+document.getElementById("mClose").onclick=()=>modal.close();
+modal.addEventListener("click",e=>{if(e.target===modal)modal.close();});
+
+/* Projects */
+const projGrid=document.getElementById("projGrid");
+PROJECTS.forEach(p=>{
+  const el=document.createElement("article");
+  el.className="proj reveal";
+  const tilesHTML=`<div class="tiles">${p.tiles.map(t=>`<div>${t[0]}<b>${t[1]}</b></div>`).join("")}</div>
+    <svg class="spark" viewBox="0 0 300 80" preserveAspectRatio="none" aria-hidden="true">
+      <polyline fill="none" stroke="#1a73e8" stroke-width="2" points="0,40 25,30 50,38 75,26 100,34 125,22 150,36 175,28 200,40 225,30 250,38 275,32 300,50"/>
+      <polyline fill="none" stroke="#188038" stroke-width="2" points="0,48 25,38 50,30 75,42 100,26 125,34 150,22 175,36 200,28 225,22 250,34 275,24 300,40"/>
+      <polyline fill="none" stroke="#f9ab00" stroke-width="2" points="0,66 25,58 50,64 75,50 100,62 125,46 150,60 175,52 200,66 225,48 250,60 275,44 300,64"/>
+      <polyline fill="none" stroke="#d93025" stroke-width="2" points="0,70 25,66 50,72 75,64 100,70 125,60 150,68 175,64 200,70 225,62 250,68 275,64 300,70"/>
+    </svg>`;
+  el.innerHTML=`
+    <div class="shot">${tilesHTML}</div>
+    <div class="proj-body">
+      <h3>${p.title}</h3>
+      <p>${p.desc}</p>
+      <div class="pstats">${p.stats.map(s=>`<div class="pstat"><b>${s[0]}</b><small>${s[1]}</small></div>`).join("")}</div>
+    </div>`;
+  projGrid.appendChild(el);
+  // If a screenshot exists in images/, replace the fallback tiles with it
+  const im=new Image();
+  im.src=p.img; im.alt=p.title+" Google Ads performance";
+  im.onload=()=>{const s=el.querySelector(".shot");s.innerHTML="";s.appendChild(im);};
+});
+
+/* Mobile menu */
+const burger=document.getElementById("burger"),menu=document.getElementById("menu");
+burger.onclick=()=>menu.classList.toggle("open");
+menu.querySelectorAll("a").forEach(a=>a.addEventListener("click",()=>menu.classList.remove("open")));
+
+/* Contact form -> WhatsApp */
+document.getElementById("cform").addEventListener("submit",e=>{
+  e.preventDefault();
+  const msg=`Hi Shakib, I'm ${fn.value}. Business type: ${fb.value}.${fw.value?" Website: "+fw.value+".":""}\n\n${fm.value}`;
+  window.open(SITE.whatsapp+"?text="+encodeURIComponent(msg),"_blank");
+});
+
+/* Scroll reveal + active nav link */
+const io=new IntersectionObserver(es=>es.forEach(x=>{if(x.isIntersecting){x.target.classList.add("in");io.unobserve(x.target);}}),{threshold:.12});
+function observeAll(){document.querySelectorAll(".reveal:not(.in)").forEach(el=>io.observe(el));}
+observeAll();
+const links=[...menu.querySelectorAll("a")];
+const secs=links.map(a=>document.querySelector(a.getAttribute("href")));
+window.addEventListener("scroll",()=>{
+  const y=window.scrollY+120; let cur=0;
+  secs.forEach((s,i)=>{if(s&&s.offsetTop<=y)cur=i;});
+  links.forEach((a,i)=>a.classList.toggle("active",i===cur));
+},{passive:true});
+</script>
+</body>
+</html>
